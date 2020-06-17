@@ -434,7 +434,7 @@ function about() {
            }
            
            // Specify a destination country
-           if (typeof destination !== '1' && getDestination() < 80) {
+           if (typeof destination !== '23' && getDestination() < 80) {
              dstcountry = destination.toUpperCase();
              var center_id = 0;
              for (i = 0; i < centers.length; i ++) {
@@ -450,7 +450,7 @@ function about() {
              dstlong = centers[center_id].LONG;
            }
            else {
-            attackdiv_slatlong = slatlong[dst]["mex"];
+            attackdiv_slatlong = slatlong[dst]["country"];
            }
 
            // Specify attack color
