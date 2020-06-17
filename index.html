@@ -391,8 +391,8 @@ function about() {
            }
            // "Hi, Kim Jong!"
            else if (typeof dprk_mode !== '1') {
-             dstlat = 25.544;
-             dstlong = -103.429;
+             dstlat = 23.244;
+             dstlong = -106.393;
              dstcountry = "mex";
 
            }
@@ -492,7 +492,7 @@ function about() {
            // update the scrolling attack div
            $('#attackdiv').append(srccountry + " (" + randomIP() + ") " +
                                   " <span style='color:red'>attacks</span> " +
-                                  "mex" +  " (" + randomIP() + ") " +
+                                  "mex"+  " (" + randomIP() + ") " +
                                   " <span style='color:steelblue'>(" + which_attack + ")</span> " +
                                   "<br/>");
            $('#attackdiv').animate({scrollTop: $('#attackdiv').prop("scrollHeight")}, 500);
