@@ -391,8 +391,8 @@ function about() {
            }
            // "Hi, Kim Jong!"
            else if (typeof dprk_mode !== '1') {
-             dstlat = 25.671;
-             dstlong = -100.309;
+             dstlat = 23.244;
+             dstlong = -106.393;
              dstcountry = "mex";
 
            }
@@ -434,7 +434,7 @@ function about() {
            }
            
            // Specify a destination country
-           if (typeof destination !== 'undefined' && getDestination() < 80) {
+           if (typeof destination !== 'mex' && getDestination() < 80) {
              dstcountry = destination.toUpperCase();
              var center_id = 0;
              for (i = 0; i < centers.length; i ++) {
