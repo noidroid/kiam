@@ -333,8 +333,7 @@ function about() {
     function getOctet() {return Math.round(Math.random()*255);}
     function randomIP () { return(getOctet() + '.' + getOctet() + '.' + getOctet() + '.' + getOctet()); }
     function getStroke() {return Math.round(Math.random()*100);}
-    //function getDestination() {return Math.round(Math.random()*100);}
-    function getDestination() {return 30;}
+    function getDestination() {return Math.round(Math.random()*100);}
     // doing this a bit fancy for a hack, but it makes it
     // easier to group code functions together and have variables
     // out of global scope
@@ -384,7 +383,7 @@ function about() {
            which_attack = attack_type[Math.floor((Math.random() * attack_type.length))];
            var srccountry = slatlong[src]["country"];
            // "Hi, Mandiant!!"
-           if (typeof china_mode !== 'undefined') {
+           if (typeof china_mode !== '1') {
              srclat = cnlatlong[src].lat;
              srclong = cnlatlong[src].long;
              if (cnlatlong[src].country=="chn") { which_attack = "ZOMGOSH CHINA!!!!!!"; }
