@@ -1,12 +1,12 @@
 {
-  "name": "IPew Attack Map",
-  "description": "Now you can have your very own IP attack map",
+  "name": "KIAM",
+  "description": "TEST ATTACK MAP",
   "keywords": [
-    "security",
-    "map",
-    "pew"
+    "test",
+    "sec",
+    "kiam"
   ],
-  "repository": "https://github.com/hrbrmstr/pewpew.git",
+  "repository": "https://github.com/noidroid/kiam",
   "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-php"
