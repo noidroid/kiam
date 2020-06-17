@@ -383,7 +383,7 @@ function about() {
            which_attack = attack_type[Math.floor((Math.random() * attack_type.length))];
            var srccountry = slatlong[src]["country"];
            // "Hi, Mandiant!!"
-           if (typeof china_mode !== '1') {
+           if (typeof china_mode !== 'undefined') {
              srclat = cnlatlong[src].lat;
              srclong = cnlatlong[src].long;
              if (cnlatlong[src].country=="chn") { which_attack = "ZOMGOSH CHINA!!!!!!"; }
@@ -405,7 +405,7 @@ function about() {
              srccountry = "usa";
            }
            // blame a former employee
-           else if (typeof employee_mode !== 'undefined') {
+           else if (typeof employee_mode !== '1') {
              if (typeof in_lat !== 'undefined' && typeof in_lon !== 'undefined') {
                srclat = in_lat;
                srclong = in_lon;
