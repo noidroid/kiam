@@ -434,7 +434,7 @@ function about() {
            }
            
            // Specify a destination country
-           if (typeof destination !== 'MX' && getDestination() < 80) {
+           if (typeof destination !== 'undefined' && getDestination() < 80) {
              dstcountry = destination.toUpperCase();
              var center_id = 0;
              for (i = 0; i < centers.length; i ++) {
@@ -492,7 +492,7 @@ function about() {
            // update the scrolling attack div
            $('#attackdiv').append(srccountry + " (" + randomIP() + ") " +
                                   " <span style='color:red'>attacks</span> " +
-                                  attackdiv_slatlong+  " (" + randomIP() + ") " +
+                                  "mex" +  " (" + randomIP() + ") " +
                                   " <span style='color:steelblue'>(" + which_attack + ")</span> " +
                                   "<br/>");
            $('#attackdiv').animate({scrollTop: $('#attackdiv').prop("scrollHeight")}, 500);
